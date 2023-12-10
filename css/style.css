@@ -439,7 +439,6 @@
       font-size: 1.5rem;
       cursor: pointer;
    }
-   /* Slogan */
    .slogan {
       margin-top: 0rem;
       z-index: -1;
@@ -476,15 +475,11 @@
          text-shadow: 0.1rem 0.1rem 0.2rem white
       }
    }
-
-   /* MAIN */
-
    .main {
       top: -4.25rem;
       position: relative;
       padding: 0.5rem;
    }
-   /* PROJECTS */
    .main .projects{
       padding: 0.5rem;
    }
@@ -526,7 +521,6 @@
       font-weight: 500;
       text-align: justify;
    }
-   /* aplicando scrool animation */
    .main .projects .pj-exemples{
       display: flex;
       flex-direction: column;
@@ -547,16 +541,9 @@
 
       box-shadow: 0.2rem 0.2rem 0.3rem gray;
 
-      /* parte da animação */
       transform: translateX(150%);
       transition: 1s ease;
    }
-   /* .main .projects .pj-exemples .houses:nth-of-type(odd){
-      transform: translate(-150%);
-   }
-   .main .projects .pj-exemples .houses:nth-of-type(even){
-      transform: translate(150%);
-   } */
    .main .projects .pj-exemples .show{
       transform: translateX(0);
    }
@@ -575,7 +562,6 @@
       text-shadow: 0.1rem 0.1rem 0.3rem black;
       margin: 0.5rem 0;
    }
-   /* TIME DE ARQUITETOS */
    .main .team {
       padding: 0.5rem;
    }
@@ -663,7 +649,6 @@
       background-color: white;
       box-shadow: 0.3rem 0.3rem 0.4rem gray;
    }
-   /* TEXTO DE DESCRIÇÃO/MENSAGEM */
    .main .message{
       margin: 0.5rem 0;
       padding: 0.5rem;
@@ -676,7 +661,6 @@
       font-weight: 500;
       font-style: italic;
    }
-   /* CONTATO */
    .main .contact{
       padding: 0.5rem;
    }
@@ -745,7 +729,6 @@
       font-family: Rajdhani;
       cursor: pointer;
    }
-   /* LOCATE */
    .main .locate{
       padding: 1rem;
       text-align: center;
@@ -755,7 +738,6 @@
       width: 90%;
       height: 35vh;
    }
-   /* footer */
    .footer{
       background-color: black;
       color: white;
