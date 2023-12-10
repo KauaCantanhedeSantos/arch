@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Armata&family=Chathura:wght@100;300;400;700;800&family=Jura:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Smooch+Sans:wght@100;200;300;400;500;600;700&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+@media(max-width:414px){
+   .header{
+      box-shadow: 0.3rem 0.3rem 0.4rem rgb(39, 39, 39);
+      z-index: 1;
+   }
+   .header .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 10vh;
+   }
+   .header .navbar .logo{
+      position: absolute;
+      padding: 0.5rem;
+   }
+   .header .navbar .logo h2{
+      font-size: 1.5rem;
+      font-family: Rajdhani;
+      font-weight: 500;
+   }
+   .header .navbar .logo h2 span{
+      font-weight: bold;
+   }
+   .header .navbar .menu{
+      z-index: 2;
+      position: relative;
+      top: 199%;
+      width: 50%;
+      height: 29.7vh;
+      left: 50%;
+      list-style: none;
+      background-color: rgba(255, 255, 255, 0.636);
+      display: none;
+      text-align: center;
+   }
+   .header .navbar .menu li{
+      margin: 0.2rem 0;
+      padding: 0.2rem;
+   }
+   .header .navbar .menu li a{
+      color: black;
+      font-size: 1.3rem;
+      font-family: Rajdhani;
+      font-weight: 600;
+   }
+   .header .navbar .icon-menu{
+      position: absolute;
+      left: 90%;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+   }
+   /* Slogan */
+   .slogan {
+      margin-top: 0rem;
+      z-index: -1;
+      position: relative;
+   }
+   .slogan img{
+      width: 100%;
+      height: 30vh;
+   }
+   .slogan h3{
+      position: relative;
+      z-index: 1;
+      top: -10.9rem;
+      left: 18%;
+      width: 70%;
+      padding: 0.5rem;
+      text-align: center;
+      background-color: rgba(114, 114, 114, 0.542);
+      backdrop-filter: blur(0.5px);
+      font-size: 2.5rem;
+      font-weight: 600;
+      font-family: Smooch Sans;
+   }
+   .slogan h3 span{
+      font-weight: bold;
+      text-shadow: 0.1rem 0.1rem 0.2rem white;
+      animation: text-shadow 3s ease-in-out infinite;
+   }
+   @keyframes text-shadow{
+      0%, 100% {
+         text-shadow: 0.1rem 0.1rem 0.2rem gray;
+      }
+      50%{
+         text-shadow: 0.1rem 0.1rem 0.2rem white
+      }
+   }
+
+   /* MAIN */
+
+   .main {
+      top: -4.25rem;
+      position: relative;
+      padding: 0.5rem;
+   }
+   /* PROJECTS */
+   .main .projects{
+      padding: 0.5rem;
+   }
+   .main .projects .pj-title{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0.5rem;
+   }
+   .main .projects .pj-title h2{
+      width: 100%;
+      font-family: Smooch Sans;
+      font-size: 2rem;
+   }
+   .main .projects .pj-title p{
+      width: 30%;
+      height: 0.3vh;
+      border-radius: 100rem;
+      background: linear-gradient(90deg, white 20%, red 45%, red 55%, white 80%);
+      background-size: 150% ;
+      animation: diresq 10s ease-in-out infinite;
+   }
+   @keyframes diresq{
+      0%, 100%{
+         background-position: 200%;
+      }
+      50%{
+         background-position: -200%;
+      }
+   }
+
+   .main .projects .pj-text{
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+
+      font-size: 1.2rem;
+      font-family: Rajdhani;
+      font-weight: 500;
+      text-align: justify;
+   }
+   /* aplicando scrool animation */
+   .main .projects .pj-exemples{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0.3rem;
+      overflow-x: hidden;
+   }
+   .main .projects .pj-exemples .houses{
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      margin: 0.8rem 0;
+      width: 100%;
+
+      box-shadow: 0.2rem 0.2rem 0.3rem gray;
+
+      /* parte da animação */
+      transform: translateX(150%);
+      transition: 1s ease;
+   }
+   /* .main .projects .pj-exemples .houses:nth-of-type(odd){
+      transform: translate(-150%);
+   }
+   .main .projects .pj-exemples .houses:nth-of-type(even){
+      transform: translate(150%);
+   } */
+   .main .projects .pj-exemples .show{
+      transform: translateX(0);
+   }
+   .main .projects .pj-exemples .houses img{
+      width: 50%;
+      height: 20vh;
+      box-shadow: 0.3rem 0.3rem 0.5rem gray;
+      border-radius: 0.4rem;
+      border: 0.25rem solid gray;
+   }
+   .main .projects .pj-exemples .houses p{
+      width: 51%;
+      font-family: Rajdhani;
+      font-weight: 600;
+      font-size: 1.2rem;
+      text-shadow: 0.1rem 0.1rem 0.3rem black;
+      margin: 0.5rem 0;
+   }
+   /* TIME DE ARQUITETOS */
+   .main .team {
+      padding: 0.5rem;
+   }
+   .main .team .team-title{
+      padding: 0.5rem;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0.5rem 0;
+   }
+   .main .team .team-title h2{
+      width: 100%;
+      font-family: Smooch Sans;
+      font-size: 2rem;
+   }
+   .main .team .team-title p{
+      width: 30%;
+      height: 0.3vh;
+      border-radius: 100rem;
+      background: linear-gradient(90deg, white 20%, red 45%, red 55%, white 80%);
+      background-size: 150% ;
+      animation: diresq 10s ease-in-out infinite;
+   }
+   .main .team .team-text{
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+
+      font-size: 1.2rem;
+      font-family: Rajdhani;
+      font-weight: 500;
+      text-align: justify;
+   }
+   .main .team .team-arq{
+      padding: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .main .team .team-arq .arqCard{
+      width: 70%;
+      margin: 0.8rem 0;
+      text-align: center;
+
+   }
+   .main .team .team-arq .arqCard img{
+      width: 70%;
+      position: relative;
+      z-index: 1;
+      top: 3rem;
+      border-radius: 0.5rem;
+      box-shadow: 0.3rem 0.3rem 0.3rem gray;
+   }
+   .main .team .team-arq .arqCard .text{
+      padding:3rem 1rem 1rem 1rem;
+      box-shadow: 0.3rem 0.3rem 0.3rem gray;
+
+   }
+   .main .team .team-arq .arqCard .text .name-leader,
+   .main .team .team-arq .arqCard .text .charge{
+      margin: 0.5rem 0;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: Rajdhani;
+      font-weight: 700;
+   }
+   .main .team .team-arq .arqCard .text .text-desc{
+      padding: 0.4rem;
+      font-family: Rajdhani;
+      text-align: justify;
+      margin:  0 0 1rem 0;
+   }
+   .main .team .team-arq .arqCard .text a{
+      width: 90%;
+      padding: 0.2rem 4rem;
+      text-decoration: none;
+      font-family: Rajdhani;
+      color: black;
+      font-weight: 600;
+      font-size: 1.3rem;
+      border: 1px solid rgb(0, 0, 0);
+      background-color: rgba(128, 128, 128, 0.52);
+   }
+   .main .team .team-arq .arqCard .text a:active{
+      background-color: white;
+      box-shadow: 0.3rem 0.3rem 0.4rem gray;
+   }
+   /* TEXTO DE DESCRIÇÃO/MENSAGEM */
+   .main .message{
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+   }
+   .main .message p{
+      padding: 0.5rem;
+      text-align: justify;
+
+      font-family: Rajdhani;
+      font-weight: 500;
+      font-style: italic;
+   }
+   /* CONTATO */
+   .main .contact{
+      padding: 0.5rem;
+   }
+   .main .contact .ctt-title{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      margin: 0 0 0.5rem 0;
+   }
+   .main .contact .ctt-title h2{
+      width: 100%;
+      font-family: Smooch Sans;
+      font-size: 2rem;
+   }
+   .main .contact .ctt-title p{
+      width: 30%;
+      height: 0.3vh;
+      border-radius: 100rem;
+      background: linear-gradient(90deg, white 20%, red 45%, red 55%, white 80%);
+      background-size: 150% ;
+      animation: diresq 10s ease-in-out infinite;
+   }
+   .main .contact .ctt-text{
+      margin: 0 0 0.5rem 0;
+      padding: 0.5rem;
+      font-size: 1.3rem;
+      font-family: Rajdhani;
+      font-weight: 500;
+   }
+   .main .contact .ctt-form{
+      padding: 0.5rem;
+      box-shadow: 0.2rem 0.2rem 0.3rem gray;
+   }
+   .main .contact .ctt-form .row{
+      margin: 0.5rem;
+   }
+   .main .contact .ctt-form .row .message{
+      height: 15vh;
+   }
+   .main .contact .ctt-form .row input{
+      width: 100%;
+      font-size: 1.3rem;
+      font-family: Rajdhani;
+      font-weight: bold;
+      color: black;
+      padding: 0.2rem;
+      box-shadow: 0.2rem 0.2rem 0.3rem gray;
+      border: none;
+   }
+   .main .contact .ctt-form .row input:active{
+      font-size: 1.3rem;
+      font-family: Rajdhani;
+      font-weight: bold;
+      color: black;
+   }
+   .main .contact .ctt-form button{
+      border: 1px solid black;
+      border-radius: 0.3rem;
+      box-shadow: 0.3rem 0.3rem 0.3rem gray;
+      margin: 0 0 0 2%;
+      padding: 0.5rem;
+      font-size: 1.3rem;
+      width: 40%;
+      font-weight: bold;
+      font-family: Rajdhani;
+      cursor: pointer;
+   }
+   /* LOCATE */
+   .main .locate{
+      padding: 1rem;
+      text-align: center;
+      margin: 0.5rem 0;
+   }
+   .main .locate img{
+      width: 90%;
+      height: 30vh;
+   }
+   /* footer */
+   .footer{
+      background-color: black;
+      color: white;
+      font-family: Rajdhani;
+      font-weight: bold;
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 1.2rem;
+   }
+   .footer a{
+      color: blue;
+   }
+
+}
+@media(max-width:750px){
+   .header{
+      box-shadow: 0.3rem 0.3rem 0.4rem rgb(39, 39, 39);
+      z-index: 1;
+   }
+   .header .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 10vh;
+   }
+   .header .navbar .logo{
+      position: absolute;
+      padding: 0.5rem;
+   }
+   .header .navbar .logo h2{
+      font-size: 1.5rem;
+      font-family: Rajdhani;
+      font-weight: 500;
+   }
+   .header .navbar .logo h2 span{
+      font-weight: bold;
+   }
+   .header .navbar .menu{
+      z-index: 2;
+      position: relative;
+      top: 199%;
+      width: 50%;
+      height: 29.7vh;
+      left: 50%;
+      list-style: none;
+      background-color: rgba(255, 255, 255, 0.636);
+      display: none;
+      text-align: center;
+   }
+   .header .navbar .menu li{
+      margin: 0.2rem 0;
+      padding: 0.2rem;
+   }
+   .header .navbar .menu li a{
+      color: black;
+      font-size: 1.3rem;
+      font-family: Rajdhani;
+      font-weight: 600;
+   }
+   .header .navbar .icon-menu{
+      position: absolute;
+      left: 90%;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+   }
+   /* Slogan */
+   .slogan {
+      margin-top: 0rem;
+      z-index: -1;
+      position: relative;
+   }
+   .slogan img{
+      width: 100%;
+      height: 30vh;
+   }
+   .slogan h3{
+      position: relative;
+      z-index: 1;
+      top: -10.9rem;
+      left: 18%;
+      width: 70%;
+      padding: 0.5rem;
+      text-align: center;
+      background-color: rgba(114, 114, 114, 0.542);
+      backdrop-filter: blur(0.5px);
+      font-size: 2.5rem;
+      font-weight: 600;
+      font-family: Smooch Sans;
+   }
+   .slogan h3 span{
+      font-weight: bold;
+      text-shadow: 0.1rem 0.1rem 0.2rem white;
+      animation: text-shadow 3s ease-in-out infinite;
+   }
+   @keyframes text-shadow{
+      0%, 100% {
+         text-shadow: 0.1rem 0.1rem 0.2rem gray;
+      }
+      50%{
+         text-shadow: 0.1rem 0.1rem 0.2rem white
+      }
+   }
+
+   /* MAIN */
+
+   .main {
+      top: -4.25rem;
+      position: relative;
+      padding: 0.5rem;
+   }
+   /* PROJECTS */
+   .main .projects{
+      padding: 0.5rem;
+   }
+   .main .projects .pj-title{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0.5rem;
+   }
+   .main .projects .pj-title h2{
+      width: 100%;
+      font-family: Smooch Sans;
+      font-size: 2rem;
+   }
+   .main .projects .pj-title p{
+      width: 30%;
+      height: 0.3vh;
+      border-radius: 100rem;
+      background: linear-gradient(90deg, white 20%, red 45%, red 55%, white 80%);
+      background-size: 150% ;
+      animation: diresq 10s ease-in-out infinite;
+   }
+   @keyframes diresq{
+      0%, 100%{
+         background-position: 200%;
+      }
+      50%{
+         background-position: -200%;
+      }
+   }
+
+   .main .projects .pj-text{
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+
+      font-size: 1.2rem;
+      font-family: Rajdhani;
+      font-weight: 500;
+      text-align: justify;
+   }
+   /* aplicando scrool animation */
+   .main .projects .pj-exemples{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0.3rem;
+      overflow-x: hidden;
+   }
+   .main .projects .pj-exemples .houses{
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      margin: 0.8rem 0;
+      width: 100%;
+
+      box-shadow: 0.2rem 0.2rem 0.3rem gray;
+
+      /* parte da animação */
+      transform: translateX(150%);
+      transition: 1s ease;
+   }
+   /* .main .projects .pj-exemples .houses:nth-of-type(odd){
+      transform: translate(-150%);
+   }
+   .main .projects .pj-exemples .houses:nth-of-type(even){
+      transform: translate(150%);
+   } */
+   .main .projects .pj-exemples .show{
+      transform: translateX(0);
+   }
+   .main .projects .pj-exemples .houses img{
+      width: 50%;
+      height: 20vh;
+      box-shadow: 0.3rem 0.3rem 0.5rem gray;
+      border-radius: 0.4rem;
+      border: 0.25rem solid gray;
+   }
+   .main .projects .pj-exemples .houses p{
+      width: 51%;
+      font-family: Rajdhani;
+      font-weight: 600;
+      font-size: 1.2rem;
+      text-shadow: 0.1rem 0.1rem 0.3rem black;
+      margin: 0.5rem 0;
+   }
+
+
+
+}
