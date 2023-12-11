@@ -387,7 +387,7 @@
    }
 
 }
-/* @media(max-width:725px){
+@media(max-width:725px){
    .header{
       box-shadow: 0.3rem 0.3rem 0.4rem rgb(39, 39, 39);
       z-index: 1;
@@ -751,4 +751,4 @@
       color: blue;
    }
 
-} */
+}
