@@ -752,3 +752,408 @@
    }
 
 }
+@media(min-width:1024px), (max-width:1250px){
+   .header{
+      padding: 0.5rem;
+      box-shadow: 0.3rem 0.3rem 0.3rem rgb(54, 54, 54);
+   }
+   .header .navbar{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem;
+   }
+   /* Logo */
+   .header .navbar .logo{
+      padding: 0.5rem;
+   }
+   .header .navbar .logo h2{
+      font-size: 2.5rem;
+      font-family: Rajdhani;
+      font-weight: 500;
+   }
+   .header .navbar .logo h2 span{
+      font-weight: bold;
+   }
+   /* MENU */
+   .header .navbar .menu{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      gap: 4rem;
+      padding: 0.5rem;
+   }
+   .header .navbar .menu .menu-item{
+      padding: 0.5rem;
+      width: 15%;
+      text-align: center;
+   }
+   .header .navbar .menu .menu-item a{
+      color: black;
+      text-decoration: none;
+      font-family: Rajdhani;
+      font-weight: 600;
+      font-size: 1.8rem;
+   }
+   .header .navbar .menu .menu-item a:hover{
+      text-decoration: underline;
+   }
+
+   /* Icon de Menu */
+   .header .navbar .icon-menu{
+      display: none;
+   }
+
+    /* Slogan */
+    .slogan {
+      margin-top: 0rem;
+      z-index: -1;
+      position: relative;
+   }
+   .slogan img{
+      width: 100%;
+      height: 100vh;
+   }
+   .slogan h3{
+      position: relative;
+      z-index: 1;
+      top: -40rem;
+      left: 18%;
+      width: 70%;
+      padding: 1.5rem;
+      text-align: center;
+      background-color: rgba(186, 186, 186, 0.401);
+      backdrop-filter: blur(1.5px);
+      font-size: 7.5rem;
+      font-weight: 600;
+      font-family: Smooch Sans;
+      animation: text-shadow 3s ease-in-out infinite;
+      box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.452);
+      border-radius: 0.5rem;
+   }
+   .slogan h3 span{
+      font-weight: bold;
+      text-shadow: 0.1rem 0.1rem 0.2rem white;
+      animation: text-shadow 3s ease-in-out infinite;
+   }
+   @keyframes text-shadow{
+      0%, 100% {
+         text-shadow: 0.1rem 0.1rem 0.2rem gray;
+      }
+      50%{
+         text-shadow: 0.1rem 0.1rem 0.2rem white
+      }
+   }
+   .main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      top: -4.25rem;
+      position: relative;
+      padding: 0.5rem;
+   }
+   /* PROJECTS */
+   .main .projects{
+      padding: 0.5rem;
+      width: 80%;
+   }
+   .main .projects .pj-title{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0.5rem;
+   }
+   .main .projects .pj-title h2{
+      width: 100%;
+      font-family: Smooch Sans;
+      font-size: 3.5rem;
+   }
+   .main .projects .pj-title p{
+      width: 30%;
+      height: 0.3vh;
+      border-radius: 100rem;
+      background: linear-gradient(90deg, white 20%, red 45%, red 55%, white 80%);
+      background-size: 150% ;
+      animation: diresq 10s ease-in-out infinite;
+   }
+   @keyframes diresq{
+      0%, 100%{
+         background-position: 200%;
+      }
+      50%{
+         background-position: -200%;
+      }
+   }
+
+   .main .projects .pj-text{
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+
+      font-size: 1.6rem;
+      font-family: Rajdhani;
+      font-weight: 500;
+      text-align: justify;
+   }
+   /* aplicando scrool animation */
+   .main .projects .pj-exemples{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0.3rem;
+      overflow-x: hidden;
+   }
+   .main .projects .pj-exemples .houses{
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      margin: 0.8rem 0;
+      width: 60%;
+
+      box-shadow: 0.2rem 0.2rem 0.3rem gray;
+
+      /* parte da animação */
+      transform: translateX(150%);
+      transition: 1s ease;
+   }
+   .main .projects .pj-exemples .show{
+      transform: translateX(0);
+   }
+   .main .projects .pj-exemples .houses img{
+      width: 55%;
+      height: 30vh;
+      box-shadow: 0.3rem 0.3rem 0.5rem gray;
+      border-radius: 0.4rem;
+      border: 0.25rem solid gray;
+   }
+   .main .projects .pj-exemples .houses p{
+      width: 51%;
+      font-family: Rajdhani;
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin: 0.5rem 0;
+   }
+
+   /* TIME DE ARQUITETOS */
+   .main .team {
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      width: 80%;
+   }
+   .main .team .team-title{
+      padding: 0.5rem;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0.5rem 0;
+   }
+   .main .team .team-title h2{
+      width: 100%;
+      font-family: Smooch Sans;
+      font-size: 4rem;
+   }
+   .main .team .team-title p{
+      width: 30%;
+      height: 0.3vh;
+      border-radius: 100rem;
+      background: linear-gradient(90deg, white 20%, red 45%, red 55%, white 80%);
+      background-size: 150% ;
+      animation: diresq 10s ease-in-out infinite;
+   }
+   .main .team .team-text{
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+
+      font-size: 1.8rem;
+      font-family: Rajdhani;
+      font-weight: 500;
+      text-align: justify;
+   }
+   .main .team .team-arq{
+      padding: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+   .main .team .team-arq .arqCard{
+      width: 40%;
+      margin: 0.8rem 0;
+      text-align: center;
+
+   }
+   .main .team .team-arq .arqCard img{
+      width: 40%;
+      position: relative;
+      z-index: 1;
+      top: 3rem;
+      border-radius: 0.5rem;
+      box-shadow: 0.3rem 0.3rem 0.3rem gray;
+   }
+   .main .team .team-arq .arqCard .text{
+      padding:3rem 1rem 1rem 1rem;
+      box-shadow: 0.3rem 0.3rem 0.3rem gray;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+   }
+   .main .team .team-arq .arqCard .text .name-leader,
+   .main .team .team-arq .arqCard .text .charge{
+      margin: 0.5rem 0;
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: Rajdhani;
+      font-weight: 700;
+      width: 60%;
+   }
+   .main .team .team-arq .arqCard .text .text-desc{
+      padding: 0.4rem;
+      font-family: Rajdhani;
+      text-align: justify;
+      margin:  0 0 1rem 0;
+      width: 80%;
+      font-size: 1.5rem;
+   }
+   .main .team .team-arq .arqCard .text a{
+      width: 60%;
+      padding: 0.8rem 4rem;
+      text-decoration: none;
+      font-family: Rajdhani;
+      color: black;
+      font-weight: 600;
+      font-size: 1.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid rgb(0, 0, 0);
+      background-color: rgba(128, 128, 128, 0.52);
+   }
+   .main .team .team-arq .arqCard .text a:hover{
+      background-color: white;
+      box-shadow: 0.3rem 0.3rem 0.4rem gray;
+   }
+
+   /* TEXTO DE DESCRIÇÃO/MENSAGEM */
+   .main .message{
+      width: 80%;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+   }
+   .main .message p{
+      padding: 0.5rem;
+      text-align: justify;
+
+      font-family: Rajdhani;
+      font-weight: 500;
+      font-size: 1.5rem;
+      font-style: italic;
+   }
+   /* CONTATO */
+   .main .contact{
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .main .contact .ctt-title{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      margin: 0 0 0.5rem 0;
+      width: 100%;
+   }
+   .main .contact .ctt-title h2{
+      width: 100%;
+      font-family: Smooch Sans;
+      font-size: 4rem;
+   }
+   .main .contact .ctt-title p{
+      width: 30%;
+      height: 0.3vh;
+      border-radius: 100rem;
+      background: linear-gradient(90deg, white 20%, red 45%, red 55%, white 80%);
+      background-size: 150% ;
+      animation: diresq 10s ease-in-out infinite;
+   }
+   .main .contact .ctt-text{
+      margin: 0 0 0.5rem 0;
+      padding: 0.5rem;
+      font-size: 1.3rem;
+      font-family: Rajdhani;
+      font-weight: 500;
+      width: 70%;
+   }
+   .main .contact .ctt-form{
+      padding: 0.5rem;
+      width: 70%;
+      box-shadow: 0.2rem 0.2rem 0.3rem gray;
+   }
+   .main .contact .ctt-form .row{
+      margin: 0.5rem;
+   }
+   .main .contact .ctt-form .row .message{
+      height: 15vh;
+   }
+   .main .contact .ctt-form .row input{
+      width: 100%;
+      font-size: 1.3rem;
+      font-family: Rajdhani;
+      font-weight: bold;
+      color: black;
+      padding: 0.2rem;
+      box-shadow: 0.2rem 0.2rem 0.3rem gray;
+      border: none;
+   }
+   .main .contact .ctt-form .row input:active{
+      font-size: 1.3rem;
+      font-family: Rajdhani;
+      font-weight: bold;
+      color: black;
+   }
+   .main .contact .ctt-form button{
+      border: 1px solid black;
+      border-radius: 0.3rem;
+      margin: 0 0 0 2%;
+      padding: 0.7rem;
+      font-size: 1.3rem;
+      width: 40%;
+      font-weight: bold;
+      font-family: Rajdhani;
+      cursor: pointer;
+   }
+   .main .contact .ctt-form button:hover{
+      box-shadow: 0.3rem 0.3rem 0.3rem gray;
+      background-color: white;
+   }
+   /* LOCATE */
+   .main .locate{
+      width: 70%;
+      padding: 1rem;
+      text-align: center;
+      margin: 0.5rem 0;
+   }
+   .main .locate img{
+      width: 90%;
+      height: 60vh;
+   }
+   /* footer */
+   .footer{
+      background-color: black;
+      color: white;
+      font-family: Rajdhani;
+      font-weight: bold;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+   }
+   .footer a{
+      color: blue;
+   }
+}
